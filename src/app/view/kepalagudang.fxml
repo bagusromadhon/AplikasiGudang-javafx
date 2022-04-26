@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.KepalagudangController">
+   <center>
+      <AnchorPane id="AnchorPane" minHeight="-Infinity" prefHeight="886.0" prefWidth="1848.0" style="-fx-background-color: lightskyblue;" styleClass="mainFxmlClass">
+         <stylesheets>
+            <URL value="@dashboard.css" />
+         </stylesheets>
+         <children>
+            <Pane prefHeight="814.0" prefWidth="1484.0">
+               <children>
+                  <AnchorPane layoutX="905.0" layoutY="513.0" prefHeight="230.0" prefWidth="391.0" style="-fx-background-color: #B2039B; -fx-background-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="194.0" fitWidth="192.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8_task_500px.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="total_keluar" layoutX="239.0" layoutY="83.0" prefHeight="94.0" prefWidth="98.0" text="Label" textFill="#4afae8">
+                           <font>
+                              <Font name="Bauhaus 93" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="176.0" layoutY="25.0" prefHeight="74.0" prefWidth="199.0" text="Barang Keluar" textFill="#f7f7f7">
+                           <font>
+                              <Font name="Bauhaus 93" size="29.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="289.0" layoutY="91.0" prefHeight="241.0" prefWidth="398.0" style="-fx-background-color: lightyellow; -fx-background-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="218.0" fitWidth="209.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8_box_500px.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="total_barang" layoutX="232.0" layoutY="95.0" prefHeight="79.0" prefWidth="98.0" text="Label" textFill="#4afae8">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="199.0" layoutY="37.0" prefHeight="58.0" prefWidth="189.0" text="Jumlah Barang" textFill="#695f5f">
+                           <font>
+                              <Font name="Bauhaus 93" size="29.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Pane layoutX="889.0" layoutY="89.0" prefHeight="246.0" prefWidth="391.0" style="-fx-background-color: lightyellow; -fx-background-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="188.0" fitWidth="179.0" layoutX="14.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8_edit_property_500px_1.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="total_masuk" layoutX="221.0" layoutY="109.0" prefHeight="74.0" prefWidth="98.0" text="Label" textFill="#4afae8">
+                           <font>
+                              <Font name="Berlin Sans FB" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="170.0" layoutY="27.0" prefHeight="63.0" prefWidth="200.0" text="Barang Masuk" textFill="#695f5f">
+                           <font>
+                              <Font name="Bauhaus 93" size="29.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <AnchorPane layoutX="284.0" layoutY="509.0" prefHeight="238.0" prefWidth="407.0" style="-fx-background-color: lightgreen; -fx-background-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="184.0" fitWidth="179.0" layoutX="14.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8_contact_500px.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="total_admin" layoutX="256.0" layoutY="100.0" prefHeight="50.0" prefWidth="99.0" text="Label" textFill="#4afae8">
+                           <font>
+                              <Font name="Bauhaus 93" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="218.0" layoutY="39.0" prefHeight="54.0" prefWidth="176.0" text="Jumlah Admin" textFill="#695f5f">
+                           <font>
+                              <Font name="Bauhaus 93" size="29.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children></Pane>
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <Pane prefHeight="886.0" prefWidth="120.0" style="-fx-background-color: #9BAAD3;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="21.0" layoutY="47.0" mnemonicParsing="false" onAction="#s" prefHeight="61.0" prefWidth="56.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10px;" styleClass="buttonhover" stylesheets="@dashboard.css" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/home_dashboard.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="21.0" layoutY="150.0" mnemonicParsing="false" onAction="#pindah_manage" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10px;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="52.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8_profile_200px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label blendMode="MULTIPLY" layoutX="35.0" layoutY="119.0" text="Home" textFill="#7987a5" />
+            <Label blendMode="MULTIPLY" layoutX="13.0" layoutY="223.0" text="Manage Admin" textFill="#7987a5" />
+            <Label blendMode="MULTIPLY" layoutX="34.0" layoutY="327.0" text="Laporan" textFill="#7987a5" />
+            <Button layoutX="19.0" layoutY="257.0" mnemonicParsing="false" onAction="#pindah_laporan" onMouseClicked="#laporan" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10px;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="52.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8_Graph_Report_500px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="21.0" layoutY="357.0" mnemonicParsing="false" onAction="#keluar" onMouseClicked="#laporan" prefHeight="60.0" prefWidth="70.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10px;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="53.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8_Logout_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label blendMode="MULTIPLY" layoutX="35.0" layoutY="426.0" text="Logout" textFill="#7987a5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </left>
+   <top>
+      <AnchorPane style="-fx-background-color: #F6F7FB;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutY="-1.0" prefHeight="62.0" prefWidth="118.0" style="-fx-background-color: #393D46;" text="Gudang" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="362.0" layoutY="13.0" text="Kepala Gudang ">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

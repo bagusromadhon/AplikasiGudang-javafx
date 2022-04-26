@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+    .dashboardButton{
+        -fx-background-image:url(home.png);
+        -fx-background-size:contain;
+        -fx-background-position: center;
+        -fx-background-repeat: no-repeat;
+    }
+    .buttonhover:hover{
+        -fx-background-color:#FF6647;
+    }
+}

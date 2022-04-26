@@ -1,0 +1,29 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+    .btnLogin:hover{
+        -fx-background-color: #7E354D;
+    }
+    .btnTitlebar{
+        -fx-background-color: transparent;
+    }
+    .btnTitlebar:hover{
+        -fx-background-color: #E81123;
+    }
+    .btnmenu{
+        -fx-background-color: #303030;
+        -fx-bakcground-color:#34495e;
+    }
+    .btnmenu:hover{
+        -fx-background-color: #7E354D;
+    }
+    .btnmenu:pressed{
+        -fx-bakcground-color:#34495e;
+    }
+    
+    
+    
+}
